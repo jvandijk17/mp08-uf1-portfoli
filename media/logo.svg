@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="canvas" id="svg-editor-canvas" width="100%" height="100%" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"><g class="logo__item" id="logo__item--business" data-item-type="text" data-item="Business">
+                <g class="logo__item__inner" transform="translate(653.24 591.069) scale(1) rotate(0)">
+                    <text letter-spacing="0px" font-family="Montserrat" font-size="32px" font-style="normal" font-weight="bold" alignment-baseline="auto" dominant-baseline="auto" fill="#f4da66" dy="0" data-ttf-url="/builder_assets/fontsttf/font-montserrat-bold-normal.ttf" data-font-style="normal" data-font-weight="bold" data-font-family="Montserrat" data-part-id="logo__item--business">Digital Dream</text>
+                </g>
+            </g><g class="logo__item" id="logo__item--logo_0" data-item-type="image" data-item="Image" data-logo-item="">
+    <g class="logo__item__inner" transform="translate(700.295 441.5) scale(1.29963) rotate(0)">
+        <g>
+	<g>
+		<path clip-rule="evenodd" fill="#f4da66" fill-rule="evenodd" d="M 25.913 79.199 c 22.552 11.941 51.544 5.088 64.751 -15.305 c 2.569 -3.979 4.255 -6.945 5.29 -11.214 c -12.061 18.315 -38.129 23.197 -58.51 12.402 C 26.092 59.07 18.917 49.061 16.831 38.187 c -1.259 0.582 -2.487 1.267 -3.662 2.05 C 8.601 43.274 5.416 47.386 3.722 51.9 C 6.55 62.975 14.222 73.006 25.913 79.199 Z" data-part-id="logo__item--logo_0__0" />
+		<path clip-rule="evenodd" fill="#297573" fill-rule="evenodd" d="M 73.719 25.413 c -22.573 -11.91 -51.557 -5.014 -64.725 15.393 c -2.571 3.988 -4.342 8.188 -5.374 12.462 C 15.648 34.932 41.812 28.78 62.208 39.545 c 11.366 5.997 20.203 19.034 22.316 31.871 c 7.096 -7.784 9.812 -11.608 11.43 -18.735 C 93.102 41.611 85.419 31.593 73.719 25.413 Z" data-part-id="logo__item--logo_0__1" />
+	</g>
+	<circle clip-rule="evenodd" fill="#297573" fill-rule="evenodd" cx="49.24" cy="51.658" r="10.698" data-part-id="logo__item--logo_0__2" />
+</g>
+    </g>
+</g></svg>

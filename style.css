@@ -1,14 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+	padding: 0;
+	margin: 0;
+}
 body {
-   background-color: #ffcc66;
+	width: 100%;
 }
-h1, h2 {
-  font-size: 46px;
-  font-family: 'Roboto', sans-serif;
+#main {
+	height: 100vh;
+	background-color: #FFFFCC;
+	text-align: center;
 }
-h1 {
-  color:  #ff9933;
+#main button {
+	background-image: url(media/menu.png);
+	background-color: transparent;
+	border: none;
+	float: left;
+	margin: 4px;
+	width: 50px;
+	height: 50px;
 }
-h2 {
-  color: #fffccc;
+#center {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+}
+#projects {
+	background-color: #D6EBFF;
+	height: 100vh;
 }
