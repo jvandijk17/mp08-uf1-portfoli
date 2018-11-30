@@ -1,3 +1,6 @@
+/* Importar fuentes */
+@import url('https://fonts.googleapis.com/css?family=Karla');
+/* Estilos */
 * {
 	padding: 0;
 	margin: 0;
@@ -10,21 +13,53 @@ body {
 	background-color: #FFFFCC;
 	text-align: center;
 }
-#main button {
+#menu {
+	position: absolute;
 	background-image: url(media/menu.png);
 	background-color: transparent;
 	border: none;
-	float: left;
 	margin: 4px;
 	width: 50px;
 	height: 50px;
+	left: 5px;
 }
-#center {
+#main h1 {
+	font-family: 'Karla', sans-serif;
+	font-size: 48px;
+	color: #F4DA66;
 	position: absolute;
 	right: 20px;
 	top: 50%;
+}
+#main h1 span {
+	color: #297573;
 }
 #projects {
 	background-color: #D6EBFF;
 	height: 100vh;
 }
+.scrollDown {
+	position: absolute;
+	width: 100%;
+	bottom: 5%;
+}
+.scrollDown a {
+	background: #333;
+	text-decoration: none;
+	border-radius: 50%;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+}
+.scrollDown a::after {
+	content:"\2B18";
+	display: block;
+	color: #FFFCCC;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+}
+.scrollDown a:hover::after {
+	content:"\2B19";
+}
+/* Volver 2B0F */
