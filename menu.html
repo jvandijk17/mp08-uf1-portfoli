@@ -7,7 +7,16 @@
 </head>
 <body>
 	<div id="main">
-		<h1>Home</h1>		
+		<button id="open" onclick="obrirMenu()"></button>
+		<div class="menu">
+		<img src="media/logo.png">
+			<h1><a href="index.html">Home</a><br><a href="index.html#projects">Proyectos</a><br><a href="index.html#team">Equipo</a><hr><a href="index.html#contact">Contacto</a></h1>
+		</div>
 	</div>
+	<script type="text/javascript">
+	function obrirMenu(){
+		window.location = "index.html";
+	}
+	</script>
 </body>
 </html>

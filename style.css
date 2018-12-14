@@ -6,14 +6,47 @@
 	margin: 0;
 }
 body {
+	font-family: 'Karla', sans-serif;
 	width: 100%;
 }
-#main {
-	height: 100vh;
-	background-color: #FFFFCC;
-	text-align: center;
+h1 {
+	font-size: 48px;
+	color: #F4DA66;
 }
-#menu {
+h2 {
+	font-size: 44px;
+	color: #F4DA66;
+}
+p {
+	margin: 50px 20%;
+	color: #FFFCCC;
+	font-weight: bolder;
+	font-size: 32px;
+	text-align: justify;
+}
+ul li {
+	display: inline;
+}
+ul li img {
+	width: 3%;
+	height: 3%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.menu h1 {
+	width: 90%;
+	text-align: right;
+}
+.menu h1 hr {
+	margin: 10px auto;
+}
+iframe {
+	margin-top: 50px;
+	border-radius: 25px;
+}
+#open {
 	position: absolute;
 	background-image: url(media/menu.png);
 	background-color: transparent;
@@ -22,21 +55,133 @@ body {
 	width: 50px;
 	height: 50px;
 	left: 5px;
+	z-index: 1;
+}
+#main {
+	height: 100vh;
+	position: relative;
+	background-color: #FFFFCC;
+	background-image: url('media/cloud.png');
+	text-align: center;
 }
 #main h1 {
-	font-family: 'Karla', sans-serif;
-	font-size: 48px;
-	color: #F4DA66;
 	position: absolute;
 	right: 20px;
 	top: 50%;
 }
+#main ul {
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	right: 1%;
+	text-align: right;
+	top: 4px;
+}
 #main h1 span {
 	color: #297573;
+}
+#projects h1 {
+	color: slategray;
 }
 #projects {
 	background-color: #D6EBFF;
 	height: 100vh;
+	position: relative;
+	text-align: center;
+}
+#projects button:not(:first-child) {
+	position: absolute;
+	bottom: 50%;
+	background-color: transparent;
+	background: #333;
+	text-decoration: none;
+	border-radius: 30%;
+	height: 80px;
+	width: 80px;
+	color: #FFFCCC;
+}
+#left {
+	left: 20px;
+}
+#right {
+	right: 20px;
+}
+#left::after {
+	content: "\021AB";
+	font-weight: bold;
+	font-size: 60px;
+}
+#right::after {
+	content: "\021AC";
+	font-weight: bold;
+	font-size: 60px;
+}
+#team {
+	background-color: tomato;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+}
+#team ul {
+	text-align: center;
+}
+#team ul li {
+	display: inline-block;
+	padding-left: 20px;
+}
+#team img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+#team ul li p {
+	margin: 0;
+	text-align: center;
+	max-width: 200px;
+}
+#team ul li p:last-child {
+	font-weight: normal;
+}
+#contact {
+	background-color: brown;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+}
+#contact ul {
+	position: absolute;
+	width: 100%;
+	bottom: 5%;
+}
+#contact .scrollUp {
+	z-index: 1;
+}
+form {
+	margin-top: 30px;
+	margin-left: 25%;
+}
+form label {
+	padding: 5px 20px;
+	color: #FFFCCC;
+	font-weight: bolder;
+	font-size: 26px;
+	display: inline-block;
+	float: left;
+	clear: left;
+	width: 250px;
+	text-align: right;
+}
+form input {
+	display: inline-block;
+	float: left;
+}
+form textarea {
+	margin-top: 5px;
+	display: inline-block;
+	float: left;
+}
+form input {
+	margin-top: 5px;
 }
 .scrollDown {
 	position: absolute;
@@ -61,5 +206,27 @@ body {
 }
 .scrollDown a:hover::after {
 	content:"\2B19";
+}
+.scrollUp {
+	position: absolute;
+	bottom: 5%;
+	right: 1%;
+	text-align: right;
+}
+.scrollUp a {
+	background: #333;
+	text-decoration: none;
+	border-radius: 30%;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+}
+.scrollUp a::after {
+	content:"\021EF";
+	display: block;
+	color: #FFFCCC;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
 }
 /* Volver 2B0F */

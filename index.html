@@ -7,16 +7,112 @@
 </head>
 <body>
 	<div id="main">
-		<button id="menu" onclick="obrirMenu()"></button>
+		<button id="open" onclick="obrirMenu()"></button>
 		<img src="media/logo.png">
+		<ul>
+			<li><img src="media/li.svg" alt="LinkedIn"></li>
+			<li><img src="media/fb.svg" alt="Facebook"></li>
+			<li><img src="media/gp.svg" alt="GooglePlus"></li>
+			<li><img src="media/tw.svg" alt="Twitter"></li>
+			<li><img src="media/ig.svg" alt="Instagram"></li>
+		</ul>
 		<h1>Make your <span>Dreams</span> come <span>Digital</span></h1>
 		<div class="scrollDown"><a href="#projects"></a></div>
 	</div>
-	<div id="projects"></div>
-	<script type="text/javascript">
+	<div id="projects">
+		<button id="open" onclick="obrirMenu()"></button>
+		<h1>Nuestros Proyectos</h1>
+		<button id="left" onclick="loadPage('left')"></button>
+		<iframe id="visor" src="https://www.freshbooks.com/" width="80%" height="75%"></iframe>
+		<button id="right" onclick="loadPage('right')"></button>
+		<div class="scrollDown"><a href="#team"></a></div>
+		<div class="scrollUp"><a href="#main"></a></div>
+	</div>
+	<div id="team">
+		<button id="open" onclick="obrirMenu()"></button>
+		<h1>Sobre nosotros</h1>
+		<p>Somos un equipo especializado en desarrollo de software y marketing digital.
+			Comenzamos a trabajar juntos porque nos fascinaban las posibilidades que ofrecían
+			las TIC y decidimos unirnos para explorarlas a fondo con el fin de explotar sus posibilidades.
+		</p>
+		<ul>
+			<li>
+				<img src="media/empl1.jpg" alt="frontend">
+				<p>Ben Adam</p>
+				<p>Front-end Developer</p>
+			</li>
+			<li>
+				<img src="media/empl2.jpg" alt="uxui">
+				<p>Emma Miller</p>
+				<p>UX/UI Designer</p>
+			</li>
+			<li>
+				<img src="media/empl3.jpg" alt="backend">
+				<p>Louis Smith</p>
+				<p>Back-end Developer</p>
+			</li>
+			<li>
+				<img src="media/empl4.jpg" alt="wordpress">
+				<p>Cindy Taylor</p>
+				<p>Wordpress Developer</p>
+			</li>
+			<li>
+				<img src="media/empl5.jpg" alt="marketing">
+				<p>Ben Walker</p>
+				<p>Marketing Specialist</p>
+			</li>
+		</ul>
+		<div class="scrollDown"><a href="#contact"></a></div>
+		<div class="scrollUp"><a href="#main"></a></div>
+	</div>
+	<div id="contact">
+		<button id="open" onclick="obrirMenu()"></button>
+		<div class="scrollUp"><a href="#main"></a></div>
+		<h1>Contacto</h1>
+		<p>Si desea trabajar con nosotros, puede contactarnos a través de las diferentes redes
+			sociales o escribirnos un mensaje mediante el siguiente formulario de contacto.
+			Apreciamos mucho su interés por emprender un proyecto junto con nosotros.</p>
+			<h2>Formulario de Contacto</h2>
+			<form action="" method="post">
+				<label for="email">Email:*</label>
+				<input name="email" type="text" required>
+				<label for="email">Telf:</label>
+				<input name="telf" type="text">
+				<label for="msg">Mensaje:</label>
+				<textarea name="msg" rows="8" cols="80"></textarea>
+				<label for="enviar"></label>
+				<input name="enviar" type="submit" value="Enviar">
+			</form>
+			<ul>
+				<li><img src="media/li.svg" alt="LinkedIn"></li>
+				<li><img src="media/fb.svg" alt="Facebook"></li>
+				<li><img src="media/gp.svg" alt="GooglePlus"></li>
+				<li><img src="media/tw.svg" alt="Twitter"></li>
+				<li><img src="media/ig.svg" alt="Instagram"></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
 		function obrirMenu(){
 			window.location = "menu.html";
 		}
-	</script>
-</body>
-</html>
+		function loadPage(direccio){
+			var pages = ["https://www.freshbooks.com/", "https://www.mint.com/", "https://www.duracellenergybank.com/"];
+			var actual = document.getElementById('visor').src;
+			if(direccio == 'left'){
+				if((pages.indexOf(actual)-1) == -1){
+					actual = pages.length - 1;
+				} else {
+					actual = pages.indexOf(actual) - 1;
+				}
+			} else {
+				if((pages.indexOf(actual)+1) == pages.length){
+					actual = 0;
+				} else {
+					actual = pages.indexOf(actual) + 1;
+				}
+			}
+			document.getElementById('visor').src = pages[actual];
+		}
+		</script>
+	</body>
+	</html>
